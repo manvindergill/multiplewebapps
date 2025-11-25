@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Apps — Launcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: rgb(85, 85, 85);">
+
+  <main class="center-wrap">
+    <h2 class="center-heading">Functional Web Apps Using External APIs</h2>
+
+    <div class="mini-row" role="tablist" aria-label="Mini apps chooser">
+     
+      <button id="movie" class="mini-card" data-url="./movieApp/index.html">
+        <div class="icon">🎥</div>
+        <div class="label">Movie</div>
+        <div class="sub">Search movies</div>
+      </button>
+
+      <button id="weather" class="mini-card" data-url="./weatherApp/index.html">
+        <div class="icon">☁️</div>
+        <div class="label">Weather</div>
+        <div class="sub">City weather</div>
+      </button>
+
+      <button id="text" class="mini-card" data-url="./textTranslation/index.html">
+        <div class="icon">🌐</div>
+        <div class="label">Translator</div>
+        <div class="sub">Text translate</div>
+      </button>
+    </div>
+    <div id="projectViewer" class="project-viewer">
+      <iframe id="projectFrame" src="" frameborder="0"></iframe>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

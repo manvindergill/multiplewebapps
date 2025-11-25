@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Movie Search — Modal Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <div class="brand">MovieFinder</div>
+
+            <div class="search-wrap" role="search">
+                <input id="inp" type="search" placeholder="Search movies..." aria-label="Search movies" />
+                <button id="searchBtn" class="search-btn" aria-label="Search">Search</button>
+            </div>
+
+            <div class="controls">
+                <button id="popular" class="search-btn">Popular</button>
+            </div>
+        </header>
+
+        <main class="container">
+            <div id="grid" class="grid" aria-live="polite"></div>
+
+        </main>
+    </div>
+
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-panel" role="document">
+            <button id="modalClose" class="modal-close" aria-label="Close details">&times;</button>
+            <div class="modal-body">
+                <div class="modal-poster" id="modalPoster" role="img"></div>
+                <div class="modal-content">
+                    <h2 id="modalTitle"></h2>
+                    <div class="meta-row">
+                        <span id="modalRelease" class="pill"></span>
+                        <span id="modalVotes" class="pill"></span>
+                        <span id="modalRating" class="pill"></span>
+                    </div>
+                    <div id="modalOverview" class="modal-overview"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
